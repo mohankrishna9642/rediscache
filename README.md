@@ -28,12 +28,15 @@ spring.jpa.hibernate.ddl-auto=update
 spring.cache.type=redis
 management.endpoints.web.exposure.include=*
 
+===========================================================================================================================================
+
  API Endpoints
 Method	Endpoint	Description
 POST	/add	Add a new user
 GET	/retrive/{id}	Get user by ID (cached)
 PUT	/modify	Update user details
 DELETE	/delete/{id}	Delete user by ID
+===========================================================================================================================================
 
 Redis Caching
 @Cacheable: Used to cache the result of retrive() based on id.
